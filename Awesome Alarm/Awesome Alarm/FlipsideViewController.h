@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "Alarm.h"
+#import "SongViewController.h"
 
 @class FlipsideViewController;
 
@@ -16,7 +17,7 @@
 - (void)sendAlarm:(Alarm *)alarm;
 @end
 
-@interface FlipsideViewController : UIViewController
+@interface FlipsideViewController
 
 @property (strong, nonatomic) Alarm *alarm;
 @property (weak, nonatomic) id <FlipsideViewControllerDelegate> delegate;

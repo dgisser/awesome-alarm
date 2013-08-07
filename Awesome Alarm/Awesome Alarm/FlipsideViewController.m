@@ -21,10 +21,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.alarm = [[Alarm alloc] init];
     self.alarm.label = @"Alarm";
-    UIScrollView *scroll = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     
     [self.scrollView setScrollEnabled:YES];
-    [self.scrollView setContentSize:CGSizeMake(320, 1000)];
+    [self.scrollView setContentSize:CGSizeMake(320, 800)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,7 +50,6 @@
     NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
     [formatter setDateFormat:@"h:mm a"];
     self.alarm.time = [formatter stringFromDate:self.alarmTime.date];
-    NSLog(@"%@",self.alarm.time);
     [self.delegate sendAlarm:self.alarm];
 }
 

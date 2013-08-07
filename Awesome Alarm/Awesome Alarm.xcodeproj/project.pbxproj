@@ -27,6 +27,7 @@
 		2BFE451D17ADE1DC00C18AFC /* Alarm.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFE451C17ADE1DC00C18AFC /* Alarm.m */; };
 		2BFE451F17AE3B7000C18AFC /* battlescars.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2BFE451E17AE3B7000C18AFC /* battlescars.mp3 */; };
 		2BFE452117AE472F00C18AFC /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BFE452017AE472F00C18AFC /* AVFoundation.framework */; };
+		2BFE452417B2359700C18AFC /* SongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFE452317B2359700C18AFC /* SongViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,8 @@
 		2BFE451C17ADE1DC00C18AFC /* Alarm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Alarm.m; sourceTree = "<group>"; };
 		2BFE451E17AE3B7000C18AFC /* battlescars.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = battlescars.mp3; sourceTree = "<group>"; };
 		2BFE452017AE472F00C18AFC /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2BFE452217B2359700C18AFC /* SongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SongViewController.h; sourceTree = "<group>"; };
+		2BFE452317B2359700C18AFC /* SongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				2BFE44E917ACDBFF00C18AFC /* AppDelegate.h */,
 				2BFE44EA17ACDBFF00C18AFC /* AppDelegate.m */,
 				2BFE44F217ACDBFF00C18AFC /* MainStoryboard.storyboard */,
+				2BFE452217B2359700C18AFC /* SongViewController.h */,
+				2BFE452317B2359700C18AFC /* SongViewController.m */,
 				2BFE44F517ACDBFF00C18AFC /* MainViewController.h */,
 				2BFE44F617ACDBFF00C18AFC /* MainViewController.m */,
 				2BFE44F817ACDBFF00C18AFC /* FlipsideViewController.h */,
@@ -293,6 +298,7 @@
 				2BFE44F717ACDBFF00C18AFC /* MainViewController.m in Sources */,
 				2BFE44FA17ACDBFF00C18AFC /* FlipsideViewController.m in Sources */,
 				2BFE451D17ADE1DC00C18AFC /* Alarm.m in Sources */,
+				2BFE452417B2359700C18AFC /* SongViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
