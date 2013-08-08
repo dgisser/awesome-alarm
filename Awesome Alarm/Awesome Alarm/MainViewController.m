@@ -33,6 +33,7 @@
 - (void)flipsideViewControllerDidFinish:(FlipsideViewController *)controller
 {
     [self dismissViewControllerAnimated:YES completion:nil];
+    NSLog(@"%@",@"hello");
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
@@ -99,8 +100,11 @@
 
 -(void)alarmRing
 {
+    if (self.alarm.songTitle == NULL) {
+        self.alarm.songTitle = @"battlescars";
+    }
     NSURL* musicFile = [NSURL fileURLWithPath:[[NSBundle mainBundle]
-                                               pathForResource:@"battlescars"
+                                               pathForResource:self.alarm.songTitle
                                                ofType:@"mp3"]];
     self.click = [[AVAudioPlayer alloc] initWithContentsOfURL:musicFile error:nil];
     self.click.numberOfLoops = -1;

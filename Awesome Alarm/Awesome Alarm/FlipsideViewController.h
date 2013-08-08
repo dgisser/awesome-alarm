@@ -8,7 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "Alarm.h"
-#import "SongViewController.h"
+#import "AppDelegate.h"
+
 
 @class FlipsideViewController;
 
@@ -17,11 +18,11 @@
 - (void)sendAlarm:(Alarm *)alarm;
 @end
 
-@interface FlipsideViewController
+@interface FlipsideViewController : UIViewController;
 
 @property (strong, nonatomic) Alarm *alarm;
-@property (weak, nonatomic) id <FlipsideViewControllerDelegate> delegate;
-@property (assign, nonatomic) NSString *label;
+@property (strong, nonatomic) id <FlipsideViewControllerDelegate> delegate;
+@property (strong, nonatomic) NSString *label;
 @property (strong, nonatomic) IBOutlet UISwitch *sleepValue;
 @property (strong, nonatomic) IBOutlet UIDatePicker *alarmTime;
 @property (strong, nonatomic) IBOutlet UIScrollView *scrollView;

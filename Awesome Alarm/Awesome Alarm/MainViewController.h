@@ -10,9 +10,9 @@
 #import <AVFoundation/AVAudioPlayer.h>
 
 @interface MainViewController : UIViewController <FlipsideViewControllerDelegate>
--(void)updateClock;
--(void)alarmRing;
--(void)emptyAlarm;
+- (void)updateClock;
+- (void)alarmRing;
+- (void)emptyAlarm;
 - (IBAction)labelDone:(id)sender;
 - (IBAction)clearAlarm:(UIButton *)sender;
 - (IBAction)snooze:(UIButton *)sender;

@@ -1,0 +1,3 @@
+Awesome Alarm by David Gisser
+
+The idea is pretty straightforward.  You go to the settings page and set the alarm time and the alarm label.  There is also a button that takes you to another page where you can choose an alarm noise.  The alarm also has a snooze function that waits 30 sec.  The clear button gets rid of the upcoming alarm or stops the current alarm.  The settings page also has a sleep alarm switch, which I purposefully put there so that consumers would think it has higher value.

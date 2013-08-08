@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B5C0B8717B2A29D00E61F8C /* Treasure.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2B5C0B8617B2A29D00E61F8C /* Treasure.mp3 */; };
 		2BFE44DB17ACDBFF00C18AFC /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BFE44DA17ACDBFF00C18AFC /* UIKit.framework */; };
 		2BFE44DD17ACDBFF00C18AFC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BFE44DC17ACDBFF00C18AFC /* Foundation.framework */; };
 		2BFE44DF17ACDBFF00C18AFC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BFE44DE17ACDBFF00C18AFC /* CoreGraphics.framework */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B5C0B8617B2A29D00E61F8C /* Treasure.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Treasure.mp3; sourceTree = "<group>"; };
 		2BFE44D717ACDBFF00C18AFC /* Awesome Alarm.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Awesome Alarm.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFE44DA17ACDBFF00C18AFC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2BFE44DC17ACDBFF00C18AFC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -151,6 +153,7 @@
 		2BFE44E117ACDBFF00C18AFC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2B5C0B8617B2A29D00E61F8C /* Treasure.mp3 */,
 				2BFE451E17AE3B7000C18AFC /* battlescars.mp3 */,
 				2BFE44E217ACDBFF00C18AFC /* Awesome Alarm-Info.plist */,
 				2BFE44E317ACDBFF00C18AFC /* InfoPlist.strings */,
@@ -259,6 +262,7 @@
 				2BFE44F117ACDBFF00C18AFC /* Default-568h@2x.png in Resources */,
 				2BFE44F417ACDBFF00C18AFC /* MainStoryboard.storyboard in Resources */,
 				2BFE451F17AE3B7000C18AFC /* battlescars.mp3 in Resources */,
+				2B5C0B8717B2A29D00E61F8C /* Treasure.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -479,6 +483,7 @@
 				2BFE451417ACDBFF00C18AFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2BFE451517ACDBFF00C18AFC /* Build configuration list for PBXNativeTarget "Awesome AlarmTests" */ = {
 			isa = XCConfigurationList;
@@ -487,6 +492,7 @@
 				2BFE451717ACDBFF00C18AFC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

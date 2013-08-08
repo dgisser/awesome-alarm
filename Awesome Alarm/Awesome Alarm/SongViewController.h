@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 
 
-@interface SongViewController : UIViewController
+@interface SongViewController : UITableViewController
+
+@property (strong, nonatomic) id mainDelegate;
 
 @end

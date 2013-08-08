@@ -11,6 +11,7 @@
 @interface Alarm : NSObject
 @property (strong, nonatomic) NSString *label;
 @property (strong, nonatomic) NSString *time;
+@property (strong, nonatomic) NSString *songTitle;
 @property (assign, nonatomic) BOOL sleep;
 @property (assign, nonatomic) BOOL rang;
 

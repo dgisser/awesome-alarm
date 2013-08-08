@@ -7,6 +7,7 @@
 //
 
 #import "FlipsideViewController.h"
+#import "SongViewController.h"
 
 @interface FlipsideViewController ()
 
@@ -21,9 +22,9 @@
 	// Do any additional setup after loading the view, typically from a nib.
     self.alarm = [[Alarm alloc] init];
     self.alarm.label = @"Alarm";
-    
     [self.scrollView setScrollEnabled:YES];
     [self.scrollView setContentSize:CGSizeMake(320, 800)];
+    NSLog(@"%@",self.delegate);
 }
 
 - (void)didReceiveMemoryWarning
@@ -52,5 +53,13 @@
     self.alarm.time = [formatter stringFromDate:self.alarmTime.date];
     [self.delegate sendAlarm:self.alarm];
 }
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([segue.identifier isEqualToString:@"toTable"]){
+        SongViewController *controller = (SongViewController *)segue.destinationViewController;
+        controller.mainDelegate = self.delegate;
+    }
+}
+
 
 @end

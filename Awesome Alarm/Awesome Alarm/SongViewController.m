@@ -7,6 +7,7 @@
 //
 
 #import "SongViewController.h"
+#import "FlipsideViewController.h"
 
 @interface SongViewController ()
 
@@ -27,12 +28,36 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    NSLog(@"%@",self.mainDelegate);
+}
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"fromTable"]) {
+        FlipsideViewController *controller = (FlipsideViewController *)segue.destinationViewController;
+        controller.delegate = self.mainDelegate;
+    }
+    if ([[segue identifier] isEqualToString:@"treasure"]) {
+        FlipsideViewController *controller = (FlipsideViewController *)segue.destinationViewController;
+        controller.delegate = self.mainDelegate;
+        controller.alarm.songTitle = @"treasure";
+    }
+    if ([[segue identifier] isEqualToString:@"battle"]) {
+        FlipsideViewController *controller = (FlipsideViewController *)segue.destinationViewController;
+        controller.delegate = self.mainDelegate;
+        controller.alarm.songTitle = @"battlescars";
+    }
+    
 }
 
 @end
